@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car</title>
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- IMPORT BOXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header__title">Car <span> Rental</span></h1>
+        <div class="header__nav-auth">
+             <nav class="header__nav">
+                   <ul>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#cars" >Cars</a></li>
+                     <li><a href="#about" >About</a></li>
+                     <li><a href="#testimonial" >Testimonial</a></li>
+                     <li><a href="#contact" >Contact</a></li>
+                   </ul>
+             </nav>
+             <div class="header__auth">
+                 <button class="btn-secondary">Register</button>
+                 <button class="btn-primary">Login</button>
+             </div>
+        </div>
+        <!-- for Mobile -->
+         <div class="header__menu">
+             <i class="fa-solid fa-bars"></i>
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="home section-menu">
+            <div class="home__content">
+                 <h1 class="home__title"><span>Rent the Car</span>You Need,When You Neet</h1>
+               <p class="home__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptates quisquam repudiandae. Nihil ad voluptate voluptates labore et, accusamus quasi nesciunt, blanditiis quod culpa reiciendis ducimus voluptatum dolore architecto facilis.</p>
+            <button class="btn-primary">
+                Discover Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <form action="#" class="home__search-car">
+                <div class="text-input">
+                    <label for="location">Pickup Location</label>
+                    <input type="text" name="location" id="location" placeholder="Pickup location">
+                </div>
+                <div class="text-input">
+                    <label for="location">Pickup Date</label>
+                    <input type="date" name="Pickup-date" id="location" placeholder="Pickup Date">
+                </div>
+                <div class="text-input">
+                    <label for="return-date">Return Date</label>
+                    <input type="date" name="return-date" id="return-date" placeholder="Return date">
+                </div>
+                <button class="btn-primary">
+                    Search 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            </div>
+            <div class="home__rectangle"></div>
+                 <img src="images/golden-car.png" alt="" class="home__img">
+           
+            
+        </section>
+
+        <!-- CARS -->
+        <section id="cars" class="cars section-menu">
+
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about section-menu">
+
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="testimonials section-menu">
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section-menu">
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer section-menu">
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            delay: 400,
+            distance: '60px',
+            duration: 2000
+        });
+    </script>
+</body>
+
+</html>

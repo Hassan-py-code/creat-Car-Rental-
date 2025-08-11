@@ -19,3 +19,30 @@ headerMenuBtn.addEventListener("click",()=>{
           closeMenuIcon.style.display="none";  
     };
 });
+
+
+let filterBtns=document.querySelectorAll(".cars__list-btn button");
+let carCards=document.querySelectorAll('.cars__card');
+
+
+filterBtns.forEach((Element)=>{
+       Element.addEventListener("click",()=>{
+             let selectedBrand=Element.getAttribute("data-brand");
+             carCards.forEach(card=>{
+                  let cardBrand=card.getAttribute("data-brand");
+
+                  if(cardBrand===selectedBrand || selectedBrand==="all"){
+                      card.style.display='block';
+                 }else{
+                     card.style.display='none';
+                 }
+             })
+      //    remove active style from all button
+      filterBtns.forEach(btn=>btn.classList.remove("btn-primary"));
+      filterBtns.forEach(btn=>btn.classList.add("btn-secondary"));
+
+      // add active style to clicked button
+      Element.classList.remove("btn-secondary");
+      Element.classList.add("btn-primary");
+})
+})

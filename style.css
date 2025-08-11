@@ -243,6 +243,79 @@ button i {
 
 
 /* CARS */
+.cars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+}
+
+.cars__list-btn{
+      display: flex;
+      gap: 12px;
+      margin-block: 2rem;
+}
+
+.cars__list-card{
+      display: flex;
+      gap:2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.cars__card{
+      background:linear-gradient(-45deg,var(--secondary-color),white) ;
+      padding: 16px;
+      border-radius: 12px;
+      border: solid 1.5px #eeeeeeee;
+}
+
+.cars__card-car-image{
+      height: 150px;
+      object-fit: cover;
+      transition: 0.3s ease;
+      cursor: pointer;
+}
+
+.cars__card-car-image:hover{
+      transform: scale(1.1);
+}
+
+.cars__card-info{
+      display: flex;
+      gap: 1rem;
+      margin-top: 8px;
+}
+
+.cars__card-info-item{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     gap: 4px;
+}
+
+.cars__card-info-item i{
+      font-size: 24px;
+      color: var(--primary-color);
+}
+
+.cars__card-price-rent{
+      display: flex;
+      justify-content:space-between ;
+      align-items: center;
+      margin-top: 24px;
+}
+
+.cars__price{
+      color: var(--primary-color);
+}
+
+.cars__price span {
+      color: black;
+      font-size: 16px;
+
+}
+
 
 /* ABOUT */
 

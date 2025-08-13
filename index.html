@@ -350,19 +350,132 @@
 
         <!-- FOOTER -->
         <footer class="footer section-menu">
+            <div class="footer__content">
+                 <div>
+                     <h1>CarRental</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatem possimus labore ad amet doloribus!</p>
+                 </div>
+                 <div class="footer__menu">
+                     <span class="foote__menu-title">Menu</span>
+                     <ul>
+                         <li><a href="#home">Home</a></li>
+                         <li><a href="#cars">Cars</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#testimonial">Testimonial</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer__menu">
+                     <span class="foote__menu-title">
+                             Follow Us
+                     </span>
+                     <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li> <a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                     </ul>
+                 </div>
+            </div>
+            <div class="footer__divider">
 
+            </div>
+            <p class="footer__copyright">
+                 &copysr; 2025 By CarRental
+            </p>
         </footer>
 
     </main>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="script.js"></script>
+   
+  <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({
-            delay: 400,
-            distance: '60px',
-            duration: 2000
-        });
+         
+     ScrollReveal({
+        delay:400,
+        distance:"60px",
+        duration:2000
+    });
+
+    // comonents
+    ScrollReveal().reveal('.title-section');
+    ScrollReveal().reveal('.desc-section',{
+         delay:600
+    });
+
+    // home
+
+    ScrollReveal().reveal('.home__title');
+
+    ScrollReveal().reveal(".home__des",{
+         delay:600,
+    });
+
+     ScrollReveal().reveal(".home__content .btn-primary",{
+         delay:800,
+    });
+
+
+    ScrollReveal().reveal(".home__img",{
+         delay:600,
+         origin:"right",
+         duration:2500
+    });
+
+      ScrollReveal().reveal(".home__search-car",{
+         delay:1000,
+         origin:"left",
+         
+    });
+
+    // cars 
+      ScrollReveal().reveal(".cars__list-btn button",{
+         delay:600,
+         interval:300
+    });
+
+     ScrollReveal().reveal(".cars__list-card  .cars__card" ,{
+         delay:1200,
+         interval:300
+    });
+
+    // about 
+
+      ScrollReveal().reveal(".about__img-car" ,{
+         delay:600,
+         duration:2500,
+         origin:"left"
+    });
+
+     ScrollReveal().reveal(".about__list-info .card-info" ,{
+         delay:900,
+         interval:500
+    });
+    
+    // testimonails what do say client
+    ScrollReveal().reveal(".testimonials__list-card .testimonials__card" ,{
+         delay:900,
+         interval:600
+    });
+    
+    // contact 
+      ScrollReveal().reveal(".contact__form .text-input" ,{
+         delay:1000,
+         interval:600
+    });
+
+       ScrollReveal().reveal(".contact__form .btn-primary" ,{
+         delay:2500,
+         
+    });
+
+      ScrollReveal().reveal(".contact__list-info .card-info" ,{
+         delay:1000,
+         interval:600
+    });
+
+    // footer 
+
     </script>
 </body>
 

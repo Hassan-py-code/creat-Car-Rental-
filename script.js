@@ -2,6 +2,9 @@
 
 
 
+
+
+
 let headerMenuBtn=document.querySelector(".header__menu");
 let headerNavBar=document.querySelector(".header__nav-auth");
 let showMenuIcon=document.querySelector(".header__menu .fa-bars");
@@ -44,5 +47,7 @@ filterBtns.forEach((Element)=>{
       // add active style to clicked button
       Element.classList.remove("btn-secondary");
       Element.classList.add("btn-primary");
-})
-})
+});
+});
+
+
